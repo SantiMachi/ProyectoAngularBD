@@ -1,0 +1,74 @@
+
+
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+    <img class="w3-image" src="https://www.ferreterianorte.es/uploads/n2hFuped/767x0_2500x0/ferreteria-norte-banner.jpg"
+        alt="Architecture" width="1500" height="800">
+</header>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:50px">
+
+    <!-- About Section -->
+    <div class="w3-container w3-padding-32 w3-center">
+        <h1>Sobre Ferreteria UCB</h1>
+        <div class="w3-left">
+            <img src="https://img.freepik.com/vector-premium/logotipo-espacial_629862-327.jpg" alt="Me"
+                class="w3-image" style="display:block;margin:auto" width="200" height="200">
+        </div>
+
+        <div class="w3-padding-32">
+            <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of
+                lorem
+                ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut
+                rutrum.
+                Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent
+                tincidunt
+                sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non
+                fringilla.</p>
+        </div>
+        <br>
+        <hr>
+        <h1>PRODUCTOS POPULARES</h1>
+        <div fxLayout="row wrap"
+        fxLayout.xs="column"
+        fxLayoutAlign="center"
+        fxLayoutGap="20px">
+            
+            <div fxFlex="40" fxFlex.lg="30" fxFlex.sm="30" *ngFor="let heroe of heroes | slice:0:3; let i=index">
+
+                <app-tarjeta-promo [heroe]="heroe"></app-tarjeta-promo>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer >
+        <div>
+            <h1>CONTACTANOS</h1>
+            <div>
+                <div class="w3-card w3-margin w3-margin-top" fxLayout="row" fxLayoutAlign="space-between center" >
+                
+                    <div class="w3-container w3-text-white" style="width: 300px;">
+                      <h4><b>My Name</b></h4> <img src="https://static.vecteezy.com/system/resources/previews/000/439/863/original/vector-users-icon.jpg" style="width:200px; height: 200px;">
+                      <p>Ponte en contacto con nosotros:<br>
+                        Teléfono: 1234567 <br>
+                        Celular: 1234567 <br> Redes Sociales</p>
+                        <mat-icon>public</mat-icon>
+                        <mat-icon>public</mat-icon>
+                        <mat-icon>public</mat-icon>
+                    </div>
+                    <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4549.503353268658!2d-68.19848356113778!3d-16.492691306296546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sbo!4v1685330422618!5m2!1ses!2sbo"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div><hr>
+    
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- End page content -->
+</div>
